@@ -21,18 +21,18 @@ const MENU = {
 };
 
 const GALLERY = [
-  {src:"images/donut.jpg", alt:"A fork cutting into a cocoa-dusted donut"},
-  {src:"images/icedcoffee.jpg", alt:"Two iced coffees with donuts"},
-  {src:"images/matchaube.jpg", alt:"Iced matcha with an ube donut and a biscoff donut"},
-  {src:"images/pastafries.jpg", alt:"Carbonara, sandwich and fries"},
-  {src:"images/yellowlatte.jpg", alt:"Latte art in a yellow cup"},
-  {src:"images/donutplate.jpg", alt:"Three kinds of donuts and bread on white plates"},
-  {src:"images/shopglass.jpg", alt:"The cafe interior glowing behind glass"},
-  {src:"images/matchacake.jpg", alt:"Matcha drink with burnt cheesecake"},
-  {src:"images/storefront.jpg", alt:"Storefront at night"},
-  {src:"images/counter.jpg", alt:"Ordering counter and pastry case"},
-  {src:"images/shrimp.jpg", alt:"Shrimp over rice in a take-out box"},
-  {src:"images/trees.jpg", alt:"Garden tables under trees"}
+  {src:"donut.jpg", alt:"A fork cutting into a cocoa-dusted donut"},
+  {src:"icedcoffee.jpg", alt:"Two iced coffees with donuts"},
+  {src:"matchaube.jpg", alt:"Iced matcha with an ube donut and a biscoff donut"},
+  {src:"pastafries.jpg", alt:"Carbonara, sandwich and fries"},
+  {src:"yellowlatte.jpg", alt:"Latte art in a yellow cup"},
+  {src:"donutplate.jpg", alt:"Three kinds of donuts and bread on white plates"},
+  {src:"shopglass.jpg", alt:"The cafe interior glowing behind glass"},
+  {src:"matchacake.jpg", alt:"Matcha drink with burnt cheesecake"},
+  {src:"storefront.jpg", alt:"Storefront at night"},
+  {src:"counter.jpg", alt:"Ordering counter and pastry case"},
+  {src:"shrimp.jpg", alt:"Shrimp over rice in a take-out box"},
+  {src:"trees.jpg", alt:"Garden tables under trees"}
 ];
 
 const REVIEWS = [
