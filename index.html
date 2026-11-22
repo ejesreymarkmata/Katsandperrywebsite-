@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kat &amp; Perry’s Cafe | Casuntingan, Mandaue City, Cebu</title>
-<meta name="description" content="Kat &amp; Perry’s Cafe in Casuntingan, Mandaue City, Cebu. Open daily 12nn to 12mn.">
+<title>Kat &amp; Perry’s Cafe | Donuts, coffee and pasta in Mandaue City, Cebu</title>
+<meta name="description" content="Kat &amp; Perry’s Cafe in Casuntingan, Mandaue City, Cebu. Donuts, coffee, pasta and desserts. Open daily 12nn to 12mn.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="site-header">
@@ -18,7 +18,7 @@
   </a>
   <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
   <nav id="nav" class="nav">
-    <a href="#about">About</a><a href="#menu">Menu</a><a href="#visit">Visit</a><a href="#contact">Contact</a>
+    <a href="#about">About</a><a href="#favorites">Favorites</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a>
   </nav>
 </header>
 
@@ -26,49 +26,101 @@
   <section class="hero">
     <div class="lights" aria-hidden="true"></div>
     <div class="hero-inner">
-      <h1>Good coffee,<br>late into the night.</h1>
-      <p class="lead">A relaxed patio cafe in Casuntingan, Mandaue City. Open every day from noon to midnight.</p>
+      <h1>Donuts, coffee and pasta<br>under the string lights.</h1>
+      <p class="lead">A relaxed cafe in Casuntingan, Mandaue City with an air-conditioned dining room and a shaded alfresco garden.</p>
       <div class="actions">
         <a class="btn btn-gold" href="#menu">See the menu</a>
-        <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Kat+%26+Perry%27s+Cafe+Casuntingan+Mandaue+City+Cebu" target="_blank" rel="noopener">Get directions</a>
+        <a class="btn btn-ghost" data-maps href="#">Get directions</a>
       </div>
-      <p class="status" id="status" role="status">Open daily 12nn–12mn</p>
+      <div class="pills">
+        <p class="pill" id="status" role="status">Open daily 12nn–12mn</p>
+        <p class="pill"><span class="star">★</span> 3.8 on Google · 32 reviews</p>
+      </div>
     </div>
   </section>
 
   <section id="about" class="section">
-    <div class="wrap narrow">
-      <h2>A cafe made for lingering</h2>
-      <p>Kat &amp; Perry’s is a neighborhood spot under string lights, with umbrella-shaded tables, good company, and a kitchen that stays open late. Come for a coffee after work, stay for dinner with friends.</p>
-      <p class="note">Draft copy. Replace with the owners’ own story.</p>
+    <div class="wrap two">
+      <div>
+        <h2>A neighborhood cafe that stays open late</h2>
+        <p>Kat &amp; Perry’s serves house-baked donuts, well-made coffee and comforting pasta in a bright, easygoing space. Sit inside where it’s cool, or take a table in the garden under the trees.</p>
+        <p>The kitchen takes last orders at 11pm, so it works for an afternoon coffee and a late dinner alike.</p>
+        <p class="note">Draft copy. Replace with the owners’ own story.</p>
+      </div>
+      <div class="duo">
+        <img src="images/storefront.jpg" alt="Kat &amp; Perry’s Cafe storefront at night with outdoor tables" loading="lazy">
+        <img src="images/counter.jpg" alt="The ordering counter inside the cafe" loading="lazy">
+      </div>
     </div>
   </section>
 
-  <section id="menu" class="section tinted">
+  <section id="favorites" class="section tinted">
+    <div class="wrap">
+      <h2>What people come for</h2>
+      <p class="sub">Guests mention the donuts more than anything else, followed by the carbonara and the coffee.</p>
+      <ul class="fav-row">
+        <li><img src="images/donutbox.jpg" alt="Assorted donuts with iced coffee" loading="lazy"><h3>Donuts</h3><p>Soft, filled and topped, in changing flavors.</p></li>
+        <li><img src="images/carbonara.jpg" alt="Creamy carbonara with garlic bread" loading="lazy"><h3>Creamy carbonara</h3><p>Rich sauce, served with toasted bread.</p></li>
+        <li><img src="images/cheesecake.jpg" alt="Burnt cheesecake slice with an iced drink" loading="lazy"><h3>Burnt cheesecake</h3><p>Caramelized top, creamy center.</p></li>
+        <li><img src="images/latte.jpg" alt="Latte and cappuccino" loading="lazy"><h3>Coffee</h3><p>Lattes, cappuccino and iced coffee.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="menu" class="section">
     <div class="wrap">
       <h2>Menu</h2>
       <div class="tabs" role="tablist" aria-label="Menu categories"></div>
       <ul class="items" id="items"></ul>
-      <p class="note">Sample items and prices for the mock. The real menu will replace these.</p>
+      <p class="note">This is a preview of popular items. Ask at the counter for the full menu and prices.</p>
     </div>
   </section>
 
-  <section id="visit" class="section">
+  <section id="gallery" class="section tinted">
+    <div class="wrap">
+      <h2>Gallery</h2>
+      <div class="grid" id="grid"></div>
+    </div>
+  </section>
+
+  <section id="reviews" class="section">
+    <div class="wrap">
+      <h2>What guests say</h2>
+      <div class="rating">
+        <p class="score">3.8</p>
+        <div>
+          <p class="stars" aria-label="3.8 out of 5 stars">★★★★☆</p>
+          <p>Based on 32 Google reviews</p>
+        </div>
+        <ul class="tags"><li>donuts · 13</li><li>ambiance · 3</li><li>creamy carbonara · 2</li><li>pasta · 2</li><li>kitchen · 2</li></ul>
+      </div>
+      <div class="reviews" id="reviews-list"></div>
+      <p class="note">Reviews are from Google Maps.</p>
+    </div>
+  </section>
+
+  <section id="visit" class="section tinted">
     <div class="wrap two">
       <div>
         <h2>Visit us</h2>
         <p class="big">Casuntingan, Mandaue City,<br>Cebu, Philippines 6014</p>
         <p>Open daily, 12nn to 12mn.<br>Last call for orders at 11pm.</p>
-        <a class="btn btn-maroon" href="https://www.google.com/maps/search/?api=1&query=Kat+%26+Perry%27s+Cafe+Casuntingan+Mandaue+City+Cebu" target="_blank" rel="noopener">Open in Maps</a>
+        <ul class="good">
+          <li>Air-conditioned dining room</li>
+          <li>Shaded alfresco garden</li>
+          <li>Wheelchair accessible</li>
+          <li>Order at the counter</li>
+        </ul>
+        <a class="btn btn-maroon" data-maps href="#">Open in Google Maps</a>
       </div>
-      <div class="map-card" aria-hidden="true"><span>Map goes here</span></div>
+      <img class="visit-photo" src="images/trees.jpg" alt="Umbrella-shaded tables under tall trees in the garden" loading="lazy">
     </div>
   </section>
 
   <section id="contact" class="section dark">
     <div class="wrap narrow">
       <h2>Say hello</h2>
-      <p>Questions, group bookings, or a table for the evening? Message us.</p>
+      <p>Questions, group visits, or a table for the evening? Message us.</p>
       <div class="actions">
         <a class="btn btn-gold" href="https://www.facebook.com/katandperryscafe" target="_blank" rel="noopener">Message on Facebook</a>
         <a class="btn btn-ghost" href="mailto:katandperryscafe@gmail.com">katandperryscafe@gmail.com</a>
@@ -81,7 +133,9 @@
   <p>© <span id="year">2026</span> Kat &amp; Perry’s Cafe · Casuntingan, Mandaue City, Cebu</p>
 </footer>
 
-<script src="menu.js"></script>
-<script src="main.js"></script>
+<dialog id="lightbox" aria-label="Photo viewer"><button class="close" aria-label="Close photo">✕</button><img alt=""></dialog>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
